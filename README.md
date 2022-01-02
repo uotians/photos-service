@@ -26,10 +26,20 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+School project for course 'Cloud Computing' fall 2021. 
+
+CRUD operations (except read) needs a logged in user. First user (admin) is created
+in endpoint /users/admin. After first user is created, that endpoint is no longer in use.
+
+Project includes Postman collection. 
+
+
 ## Installation
 
 ```bash
 $ npm install
+$ typeorm migration:generate -n <migration-name>
+$ typeorm migration:run 
 ```
 
 ## Running the app
